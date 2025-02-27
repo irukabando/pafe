@@ -1,0 +1,11 @@
+div#contents {
+	padding-top: 70px;
+}
+
+pre {
+	tab-size: 2;
+}
+
+.markdown-body a:hover {
+	text-decoration: none;
+}

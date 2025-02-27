@@ -1,0 +1,30 @@
+<nav class='navbar navbar-expand-lg navbar-dark bg-primary fixed-top'>
+	<div class='container-fluid'>
+		<a class='navbar-brand' href='{{site.url}}'>{{site.name}}</a>
+		<button type='button' class='navbar-toggler' data-bs-toggle='collapse' data-bs-target='#nav'>
+			<span class='navbar-toggler-icon'></span>
+		</button>
+		<div class='collapse navbar-collapse' id='nav'>
+			<ul class='navbar-nav'>
+				{% for nav in site.items %}
+					<li class='nav-item'>
+						<a href='{{nav.href}}' class='nav-link {% if page.url == nav.href %} active {% endif %}'>
+							<i class='{{nav.icon}}'></i>
+							{{nav.name}}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+			<ul class='navbar-nav ms-auto'>
+				{% for nav in site.links %}
+					<li class='nav-item'>
+						<a href='{{nav.href}}' class='nav-link'>
+							<i class='{{nav.icon}}'></i>
+							{{nav.name}}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</nav>

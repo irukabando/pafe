@@ -1,0 +1,5 @@
+{% if site.head %}
+	<p><img src='{{site.url}}{{site.head}}' class='img-thumbnail' alt='head'></p>
+{% elsif site.icon %}
+	<p><img src='{{site.url}}{{site.icon}}' class='img-thumbnail' alt='icon' width='100px' height='100px'></p>
+{% endif %}

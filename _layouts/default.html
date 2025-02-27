@@ -1,0 +1,12 @@
+{% assign title = page.title | default: {{page.name | remove: '.md' | replace: '-', ' '}} %}
+
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+	{% include head.html title = title %}
+</head>
+
+<body>
+	{% include body.html title = title %}
+</body>
+</html>

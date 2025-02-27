@@ -1,0 +1,28 @@
+<meta name='description' content='{{site.desc}}'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<meta property='og:url' content='{{site.url}}{{page.url}}'>
+<meta property='og:type' content='website'>
+<meta property='og:image' content='{{site.url}}{{site.icon}}'>
+<meta property='og:title' content='{{include.title}}'>
+<meta property='og:locale' content='ja'>
+<meta property='og:site_name' content='{{site.name}}'>
+<meta property='og:description' content='{{site.desc}}'>
+<meta property='twitter:title' content='{{include.title}}'>
+
+<meta name='twitter:card' content='summary'>
+<meta name='twitter:image' content='{{site.url}}{{site.icon}}'>
+<meta name='twitter:title' content='{{include.title}}'>
+<meta name='twitter:description' content='{{site.desc}}'>
+<meta name='twitter:image:alt' content='{{include.title}}'>
+
+<script type='application/ld+json'>
+{
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"headline": "{{include.title}}",
+	"description": "{{site.desc}}",
+	"name": "{{site.name}}",
+	"url": "{{site.url}}{{page.url}}"
+}
+</script>

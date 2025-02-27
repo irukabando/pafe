@@ -1,0 +1,8 @@
+{% if page.url == '/' %}
+	{% for item in site.jumps %}
+		<a class='btn btn-lg btn-outline-primary' href='{{item.href}}'>
+			<i class='{{item.icon}}'></i>
+			{{item.name}}
+		</a>
+	{% endfor %}
+{% endif %}

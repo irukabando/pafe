@@ -1,0 +1,23 @@
+url:
+name: 無線部開発班
+icon: /assets/head.png
+lead:
+desc:
+items:
+- name: Home
+  href: /
+links:
+- name: Twitter
+  href: https://twitter.com/nextzlog
+  icon: fab fa-twitter
+- name: 東大無線部
+  href: https://ja1zlo.u-tokyo.org
+jumps:
+- name: GitHub
+  href: https://github.com/nextzlog
+  icon: fab fa-github
+- name: Issues
+  href: https://github.com/nextzlog/todo/issues
+  icon: fas fa-comments
+nomath: false
+google_analytics:

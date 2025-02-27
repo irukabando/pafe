@@ -1,0 +1,33 @@
+<meta charset='UTF-8'>
+<title>{{include.title}}{% if site.name != include.title %} - {{site.name}}{% endif %}</title>
+
+{% include meta.html title = include.title %}
+
+{% assign strap = '5.0.0' %}
+{% assign katex = '0.16.0' %}
+
+<link rel='canonical' href='{{site.url}}{{page.url}}'/>
+<link rel='shortcut icon' href='{{site.url}}{{site.icon}}'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootswatch@{{strap}}/dist/zephyr/bootstrap.min.css' media='screen'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown-light.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/katex@{{katex}}/dist/katex.min.css'>
+<link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.15.0/css/all.css'>
+<link rel='stylesheet' href='{{site.url}}/assets/common.css'>
+<link rel='stylesheet' href='{{site.url}}/assets/syntax.css'>
+
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@{{strap}}/dist/js/bootstrap.bundle.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/katex@{{katex}}/dist/katex.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/katex@{{katex}}/dist/contrib/auto-render.min.js'></script>
+
+<script>
+const cookieName = 'cookie-notice-dismissed-{{site.url}}';
+const isCookieConsent = '';
+const analyticsName = '{{site.google_analytics}}';
+const analyticsNameGA4 = '';
+const disableMath = {{site.nomath | default: false}};
+</script>
+
+<script async src='https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script src='/assets/common.js'></script>

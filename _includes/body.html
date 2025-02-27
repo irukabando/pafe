@@ -1,0 +1,13 @@
+{% include navi.html %}
+<div class='container-fluid px-md-5' id='contents'>
+	<div class='border-bottom text-center py-md-5 py-3'>
+		<h1>{{include.title}}</h1>
+		<h4>{{page.subtitle}}</h4>
+		{% include lead.html %}
+		{% include jump.html %}
+		{% include copy.html %}
+	</div>
+	<div class='py-md-5 py-3 fs-6'>
+		{% include text.html %}
+	</div>
+</div>
